@@ -33,7 +33,7 @@ void imprimirLista(Lista *listaPorRef)
     printf("\n\n");
 }
 
-void InserirFinal(Lista *listaPorRef, int valor)
+void inserirFinal(Lista *listaPorRef, int valor)
 {
     No *aux, *novo = (No *)malloc(sizeof(No));
     (*novo).valor = valor;  // Valor inserido é associado ao novo nó, que é o ponteiro "novo"
@@ -107,7 +107,7 @@ int main()
         case 3:
             printf("\nInsira um valor: ");
             scanf("%d", &valor);
-            InserirFim(&listaEncad, valor);
+            inserirFinal(&listaEncad, valor);
             break;
         case 4:
             printf("\nInsira um valor a ser removido: ");
